@@ -76,7 +76,7 @@ i.e. R.V(X) maping as set of values of number of time the success has occured ou
 
 P(X= x) PMF(Probability masses of functions) = c(n,k)*(p)^k*(1-p)^n-k.
 
-# E[X] (expection of Binomial R.V(X)): SUMMATION(P(X = x)*x) i.e. Summation of all the mass*probability of that mass.
+# E[X] (expection of Binomial R.V(X)): SUMMATION(P(X = x)*(x) i.e.( Summation of all the (probability)(mass of that outcome)) 
 
 # Varience(X): ( E[x^2] - (E[X])^2 ).
 
@@ -94,7 +94,34 @@ P(X >or = 6) = P(X = 6) + P(X = 7) + P(X = 8)
 P(X >or = 6) =   0.296 + 0.197 + 0.576 = 0.5517
 
 # ~55.17% Chances that at-least 6 enemy drones were hit in an interceptor. 
+-----------------------------------------------------------------------------------------
 
+# Hypergeomatric~(N, m, N-m, n, m-n)
+
+# Outcomes of the sample space are dependent. choosing sample of size k without replacement out of population of size N. 
+
+# PMF  = P(X = x) = c(m, k).c(N-m, k-x) // c(N, n)  where k, k-x are subset of n(selected samlpe)
+
+N = Total Population Size.
+m = class_1, N-m = class_2. where m, N-m are subsets of the set N.
+
+# Applied for prediction of kowing out of selected sample (at-least, at-most, exactly) k belongs to a perticular class of size m, from the known population size N. 
+
+E[X] = m*(N//k) or (probability of success).(belonging_class(m))
+
+i.e. In a locality there were 22 houses estsbilished, out of them 9 were of terrorist recidances and rest were of civilean. in an operation surface to surface missiles were targated in that locality, to eliminate terrorist recidances. If  houses were hited, then the chances that at-least 7 were terrorist recidances would be?. 
+
+sol.
+Total established houses(N) = 22, Terrorist recidances(m) = 9, Civilian houses(N-m) = 13, 
+Total no. of hited houses(n) = 13
+
+Maping R.V(X) as (number of terrorist_hited_houses)
+
+probability of at_least 10 were of terriorist = P(X = 7) + P(X = 8) + P(X = 9)
+
+P(X > or = 7) = 0.124 + 0.023 + 0.044 
+=
+# ~14.9% chances that at-leat 7 would be of terrorist recidances.
 
 
 
