@@ -93,7 +93,7 @@ P(X >or = 6) = P(X = 6) + P(X = 7) + P(X = 8)
 
 P(X >or = 6) =   0.296 + 0.197 + 0.576 = 0.5517
 
-# ~55.17% Chances that at-least 6 enimy drones were hit in an interceptor. 
+# ~55.17% Chances that at-least 6 enemy drones were hit in an interceptor. 
 
 
 
