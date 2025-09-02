@@ -23,7 +23,7 @@ https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..g
 
 08_Gaussion_Distribution.
 
-09_Uniform_continuoues_Distribution.
+09_continuoues_Uniform_Distribution.
 
 -------------------------------------------------------
 
@@ -46,7 +46,7 @@ P(H|A2) = P(H n A2) // P(H n A1) + P(H n A1)  + P(H n A2) + P(H n A3) + ....P(H 
 
 P(worng prediction of test) = .62 + .78 + .86 + .74 = 3.0
 
-P(Third Tree|worng prediction of test) = .86 // 3.0 == .28.7
+P(Third Tree|worng prediction of test) = .86 / 3.0 == .28.7
 
 ~ 28.7% Chances that the test was wrongly predicted by the third Decision-tree.
 
@@ -61,7 +61,7 @@ P(L n P2) 0.8*0.2 = 0.16
 
 Total chance of the lossing of the parcel is P(L n P1) + P(L n P2) = 0.16 + 0.2 = 0.36
 
-P(L|P2) = 0.16 // 0.36 == 0.4.
+P(L|P2) = 0.16 / 0.36 == 0.4.
 # ~ 40% chances that the parcel is lost by the second post-office. 
 
 -----------------------------------------------------------------------------------------
@@ -123,6 +123,44 @@ probability of at_least 10 were of terriorist = P(X = 7) + P(X = 8) + P(X = 9)
 P(X > or = 7) = 0.124 + 0.023 + 0.044 
 =
 # ~14.9% chances that at-leat 7 would be of terrorist recidances.
+-----------------------------------------------------------------------------------------
+
+# CDF_VS_PDF of the a continuous random variable.
+ 
+#Cumulative distribution function as named cumulative it accumulates the probabilites of values of the Random variable X till a pirticular mass(value). 
+# Irrespective of that the R.V(x) is discrete or continuous the CDF of the fuction will alwasy exists.
+# Non_Decresing.
+
+# F(a) = P(X <= a)
+# 0 <= F(a) <= 1
+
+#Probability dencity function: It exist for continuous disrtibution of the R.V(X).
+#AS named probabilites of the R.V(X) are continuously distributes under a dencity-curve.
+
+# Helpful to analysies how likely a data point falls in between a specific (very-small) range of points.
+-----------------------------------------------------------------------------------------
+
+# Poisson-Distribution~(lambda).
+#Expected value the random variable X of the outcome space act as a parameter for the PMF.
+
+# PMF P(X= x) e^-(lambda).(lambda)^x / x!
+
+# To make prediction about the event having number of trials(N) as very large, and having chances of success very less.
+# fallows properties of binomial distribution i.e. Events can be maped as success or failure, Independent occurance of events, etc.
+
+# i.e. The chances that trained Ml-model gives wrong predictions is 0.002. If the sample of 2000 datasets given to Model for testing purpose. chances that the model will predict at most 5 data points worngly will be?
+sol.
+maping R.V(X) as set no.'s wrongly predicted outcomes.
+
+expected value(lambda)= (total_no. of data_points).(chances of success) = 2000.(0.002) = 10
+
+chances that model will predict at most 5 wrong data points = P(X=< 5).
+
+P(X <= 5) = P(X= 0) + P(X= 1) + P(X= 2) + P(X= 3) + P(X= 4) + P(X = 5)
+
+= 0.0000454 + 0.000499 + 0.0103 + 0.02925 + 0.06708 = 0.0671
+
+# ~6.71% Chances that the model will predict at most 5 data points wrongly. 
 
 
 
