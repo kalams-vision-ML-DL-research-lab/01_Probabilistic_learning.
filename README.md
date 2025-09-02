@@ -23,7 +23,8 @@ https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..g
 
 08_Gaussion_Distribution.
 
-09_Continuous_Uniform_Distribution.
+09_Uniform_continuoues_Distribution.
+
 -------------------------------------------------------
 
 # Bay's Theoram.
