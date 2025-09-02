@@ -64,7 +64,36 @@ P(L|P2) = 0.16 // 0.36 == 0.4.
 # ~ 40% chances that the parcel is lost by the second post-office. 
 
 -----------------------------------------------------------------------------------------
+# Binomial_Distribution~(p,n)
 
+# Independent occurence of the events and outcomes can be maped as success and failure. i.e. detected(not-detected), spam(ham), having deciese(not having deciese), etc.
+
+# Making prediction about (at-least, at-most, exactly) k successs out of n independent-trials of an any evnet.
+
+#Random-variable: A real valued fuction which maps a real number to every out come of the sample space, helpful for doing statical-operatuions(i.e. Expection, Varience) of the outcomes of the event.
+
+i.e. R.V(X) maping as set of values of number of time the success has occured out n independent trials. 
+
+P(X= x) PMF(Probability masses of functions) = c(n,k)*(p)^k*(1-p)^n-k.
+
+# E[X] (expection of Binomial R.V(X)): SUMMATION(P(X = x)*x) i.e. Summation of all the mass*probability of that mass.
+
+# Varience(X): ( E[x^2] - (E[X])^2 ).
+
+i.e. Air defence system firs one intercepor at each 8 incoming hostile drones. each hit to the droen is independent to each other, with probability of 0.7. what are the "chances" that in an interceptor at-least 6 
+enemy-drones were hit. 
+
+sol. Maping random variable X as Number of successful hits.
+
+X ~ Binomial(n = 8, p = 0.7)
+
+P(X is greter than or equals to 6)
+
+P(X >or = 6) = P(X = 6) + P(X = 7) + P(X = 8)
+
+P(X >or = 6) =   0.296 + 0.197 + 0.576 = 0.5517
+
+# ~55.17% Chances that at-least 6 enimy drones were hit in an interceptor. 
 
 
 
