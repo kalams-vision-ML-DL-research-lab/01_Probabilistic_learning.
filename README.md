@@ -42,6 +42,7 @@ given the event H has occured, then chances that it belongs to subset (A2)
 
 P(H|A2) = P(H n A2) // P(H n A1) + P(H n A1)  + P(H n A2) + P(H n A3) + ....P(H n An).
 -----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 # To make trustworthy predictions of a Randomly chosen Person from population of 470 pepole is COVID-19 positive, Bootstrap Aggragating(Bagging) Ensembling method with four decision trees were used. every tree has independent probability of giving correct prediction, with (.38, .22, .14, .26) probabilities respectively. Given that the test was wrongly predicted by a tree, Chances that the tree was third one. 
 
 P(worng prediction of test) = .62 + .78 + .86 + .74 = 3.0
@@ -49,8 +50,6 @@ P(worng prediction of test) = .62 + .78 + .86 + .74 = 3.0
 P(Third Tree|worng prediction of test) = .86 / 3.0 == .28.7
 
 ~ 28.7% Chances that the test was wrongly predicted by the third Decision-tree.
-
-
 -----------------------------------------------------------------------------------------
 # i.e. Parcel from sendeer to Reciver Passes sequentially through Two post offices (P1, P2). chances of any post office lossing an incomig parcel is 0.2, indepenthy of all other parcels. given that a parcel has lost, chances that it lost by the second post office. 
 
@@ -63,7 +62,7 @@ Total chance of the lossing of the parcel is P(L n P1) + P(L n P2) = 0.16 + 0.2 
 
 P(L|P2) = 0.16 / 0.36 == 0.4.
 # ~ 40% chances that the parcel is lost by the second post-office. 
-
+-----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
 # Binomial_Distribution~(p,n)
 
@@ -96,7 +95,7 @@ P(X >or = 6) =   0.296 + 0.197 + 0.576 = 0.5517
 
 # ~55.17% Chances that at-least 6 enemy drones were hit in an interceptor. 
 -----------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------
 # Hypergeomatric~(N, m, N-m, n, m-n)
 
 # Outcomes of the sample space are dependent. choosing sample of size k without replacement out of population of size N. 
@@ -124,7 +123,7 @@ P(X > or = 7) = 0.124 + 0.023 + 0.044
 =
 # ~14.9% chances that at-leat 7 would be of terrorist recidances.
 -----------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------
 # CDF_VS_PDF of the a continuous random variable.
  
 #Cumulative distribution function as named cumulative it accumulates the probabilites of values of the Random variable X till a pirticular mass(value). 
@@ -139,7 +138,7 @@ P(X > or = 7) = 0.124 + 0.023 + 0.044
 
 # Helpful to analysies how likely a data point falls in between a specific (very-small) range of points.
 -----------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------
 # Poisson-Distribution~(lambda).
 #Expected value the random variable X of the outcome space act as a parameter for the PMF.
 
@@ -164,7 +163,7 @@ P(X <= 5) = P(X= 0) + P(X= 1) + P(X= 2) + P(X= 3) + P(X= 4) + P(X = 5)
  
 # i.e. The deployed model detects anomalies with an avrage rate of 8 detections per minute. what will be tha chances that the models detect 3 anomaly within 15 seconds. 
 -----------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------------------
 # Exponential_Distribution~(lambda)
 #parameter lambda is 1 over by avarage(Expected) time.
 
@@ -190,9 +189,31 @@ lambda = one over by the avarage time, that is 1/30.
 #  p(x >= 5) = 0.8103
 
 # ~81.07% there Chances that the model detect at lest 5 out 6 jets within 60 seconds.
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+# Gaussina_Distribution~(mean, standerd_deviation).
 
-<!-- # i.e. The minimum circular ranges of Multi-Barrale Missailes tested at missile testing_range are disributed normaly. with expected MCR of 9 meaters, and the standerd_deviation of the distribution is computated as 3. -->
-<!-- # What are the chances that the minimum circular range of randomly tested missile wolud be between 6m and 8m. -->
+# Continuous distribution of the data under the "Bell-Shaped" Cure. It's a very common("Normal") distribution for real world data. in which the data is distributed as i.e. (Very_Rare, Less_Raer, Frequent, Most_Frequent).
+
+#Commanly used in Goverment_Statical_Data, etc. 
+# very mush useful to perdict "Anomaly" in the data. 
+
+# i.e. The minimum circular ranges of Multi-Barrel Missiles tested at missile testing_range are disributed normally. with expected MCR of 9 meaters, and the standerd_deviation of the distribution is computated as 3. 
+# What are the chances that the minimum circular range of the randomly tested missile wolud be between 6m and 8m ? 
+
+#P(6 < X < 8 ) ? # MCR lies between 6m and 8m. 
+#Computing PMF by converting R.V(X) into "Standerd Normal Distribution." 
+#P(6-9/3 < Z < 8-9/3)  = P(-1 < Z < -0.33 ) ~.2129 
+# Randomly chosen tested missile will have ~21.29% chances of having MCR in between 6m and 8m. 
+
+
+# The Pulse rate of youg adults distibuted normally with the mean of 72 beats/minute and the Standrd deviation of the Puls rate is computed as 9.5. If the requirement for the military rule out anyone whose pulse rate is over 95 berts per minuty, what Percentage of the population of youngs adults does not meet the militry standards? 
+sol.
+#Avarage pulse rate = 72/minute. 
+# Percentage of the population doesn't meat the militry standerd. 
+#P(X > 95) converting standerd normal distribution. P(Z> 95-72/9.5) 
+#P(Z > 2.42) ~ 0.0078
+# ~0.78 percantage of population the young adults doesn't meat the militry standerds. 
 
 
 
