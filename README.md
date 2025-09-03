@@ -196,7 +196,7 @@ lambda = one over by the avarage time, that is 1/30.
 # Continuous distribution of the data under the "Bell-Shaped" Cure. It's a very common("Normal") distribution for real world data. in which the data is distributed as i.e. (Very_Rare, Less_Raer, Frequent, Most_Frequent).
 
 #Commanly used in Goverment_Statical_Data, etc. 
-# very mush useful to perdict "Anomaly" in the data. 
+#very mush useful to perdict "Anomaly" in the data. 
 
 # i.e. The minimum circular ranges of Multi-Barrel Missiles tested at missile testing_range are disributed normally. with expected MCR of 9 meaters, and the standerd_deviation of the distribution is computated as 3. 
 # What are the chances that the minimum circular range of the randomly tested missile wolud be between 6m and 8m ? 
