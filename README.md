@@ -162,7 +162,7 @@ P(X <= 5) = P(X= 0) + P(X= 1) + P(X= 2) + P(X= 3) + P(X= 4) + P(X = 5)
 
 # ~6.71% Chances that the model will predict at most 5 data points wrongly. 
  
-# i.e. The deployed model detects anomalies with an avrage rate of 8 detection per minute. what will be tha chances that the models detect 3 anomaly within 15 seconds. 
+# i.e. The deployed model detects anomalies with an avrage rate of 8 detections per minute. what will be tha chances that the models detect 3 anomaly within 15 seconds. 
 -----------------------------------------------------------------------------------------
 
 # Exponential_Distribution~(lambda)
