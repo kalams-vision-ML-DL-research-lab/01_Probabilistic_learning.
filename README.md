@@ -191,8 +191,8 @@ lambda = one over by the avarage time, that is 1/30.
 
 # ~81.07% there Chances that the model detect at lest 5 out 6 jets within 60 seconds.
 
-
-
+<!-- # i.e. The minimum circular ranges of Multi-Barrale Missailes tested at missile testing_range are disributed normaly. with expected MCR of 9 meaters, and the standerd_deviation of the distribution is computated as 3. -->
+<!-- # What are the chances that the minimum circular range of randomly tested missile wolud be between 6m and 8m. -->
 
 
 
