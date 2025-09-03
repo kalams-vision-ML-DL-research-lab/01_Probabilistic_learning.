@@ -1,6 +1,6 @@
 # 01_Probabilistic_learning.
 
-# This repository projects is base on Foundational-Probabilistic-Learning(i.e. Baysian-Model, Uncertinity Prediction, Distirbutions). for Real-World "Defence" and "Societal" Predictions.
+# This repository projects is base on Foundational-Probabilistic-Learning(i.e. Baysian-Model, Uncertinity_Quantification, Distirbutions). for Real-World "Defence" and "Societal" Predictions.
 
 # Rescources: Probability and Statistical Infrence(Ningth Edition).
 
