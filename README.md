@@ -161,8 +161,35 @@ P(X <= 5) = P(X= 0) + P(X= 1) + P(X= 2) + P(X= 3) + P(X= 4) + P(X = 5)
 = 0.0000454 + 0.000499 + 0.0103 + 0.02925 + 0.06708 = 0.0671
 
 # ~6.71% Chances that the model will predict at most 5 data points wrongly. 
+ 
+# i.e. The deployed model detects anomalies with an avrage rate of 8 detection per minute. what will be tha chances that the models detect 3 anomaly within 15 seconds. 
+-----------------------------------------------------------------------------------------
 
+# Exponential_Distribution~(lambda)
+#parameter lambda is 1 over by avarage(Expected) time.
 
+#Useful to make prediction time of the rare events in future. it maps occurance time of the events, i.e. number of peoples entering into the mall. 
+# @Exected delivery time of the parsel, expected reciving of the cab. 
+# @Expected anomaly dectaction time of the model.
+
+#PMF = (lambda).e^-(lambda).(t)    where t is the time.
+#CDF = 1 - e^-(lambda) 
+
+# i.e. The detection time for one anomaly is expected to 30 seconds by the model. If 6 enemy jets enters the air field, then what are the chances that the model will detect at least 5 withine 60 seconds. 
+sol. 
+lambda = one over by the avarage time, that is 1/30.
+
+#prob. of success for one detection will be 1 - e^-2.
+
+#this case fallosws binomial's property i.e. (k success out of n trials).
+
+#Chances that it will detect at least 5 jets within 60 seconds. will be detecting exact 5 jets + detecting all 6 jets.
+
+# P(X= 5) = C(6, 5).((1- e^-2))^5.(e^-2) = ~ 0.3924
+# P(X= 6) = C(^, 6).((1- e^-2))^6 = ~  0.4179
+#  p(x >= 5) = 0.8103
+
+# ~81.07% there Chances that the model detect at lest 5 out 6 jets within 60 seconds.
 
 
 
