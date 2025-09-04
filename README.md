@@ -27,7 +27,7 @@ https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..g
 
 -------------------------------------------------------
 
-# Bay's Theoram.
+# Baysian Modaling.
 
 In real world machine-learning prediction use of Bay's theoram is very much wast. i.e. classification, making predctions about uncertainity, etc.
 
@@ -214,6 +214,23 @@ sol.
 #P(X > 95) converting standerd normal distribution. P(Z> 95-72/9.5) 
 #P(Z > 2.42) ~ 0.0078
 # ~0.78 percantage of population the young adults doesn't meat the militry standerds. 
+
+-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
+# Uniform Distribution~(a, b)
+
+# In a given interval having constant chance of occurance of events.
+
+# PMF #P(X = x) for any value x in [a, b]  will be  one over b - a.
+
+# i.e. The detection time for a deployed model to detect an anomaly is uniform within 8 seconds. in a experiment it's found that the model requries approxamitly 7 seconds to detect another anomaly after detecting one. what are the chances that the model takes 3 seconds to detect an anomaly after detecting one? 
+sol.
+#Mapping R.V(X) as waiting time.
+
+#P(X >= 3) = Maximum waiting time - taken required waiting time / Maximum waiting time
+
+#P(X >= 3) = (7 - 3) /7 = 4/7 = 0.5714
+# ~57.14% chances that the model will requried at lest 3 seconds to detect another anomaly after detecting one.
 
 
 
