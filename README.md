@@ -9,7 +9,7 @@ https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..g
 #Project consist two files. 
 1. 01_Probabilistic_learning.md: For Distribution models. 
 2. README.md: Information & introduction
-3. 
+
 # Content:
 01_Baysian_Models.
 
