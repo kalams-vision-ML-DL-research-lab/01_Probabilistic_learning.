@@ -1,9 +1,5 @@
 # 01_Probabilistic_learning.
 
-# This repository projects is base on Foundational-Probabilistic-Learning(i.e. Bayesian-Model, Uncertainty Quantification, Distributions). for Real-World "Defence" and "Societal" Predictions.
-
-# Resources: Probability and Statistical Inference(Ninth Edition).
-
 https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..git
 
 # Content:
@@ -233,6 +229,7 @@ sol.
 
 #P(X >= 3) = (7 - 3) /7 = 4/7 = 0.5714
 # ~57.14% chances that the model will required at lest 3 seconds to detect another anomaly after detecting one.
+
 
 
 
