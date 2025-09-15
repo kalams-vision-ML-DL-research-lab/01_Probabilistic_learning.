@@ -2,6 +2,8 @@
 #This repository is build to understand some probabilistic models (distributions), how probabilistic models helps us in real world descision making problems. 
 #repository projects is base on Foundational-Probabilistic-Learning(i.e. Bayesian-Model, Uncertainty Quantification, Distributions). for Real-World "Defence" and "Societal" Predictions.
 
+#Started: 1st year.  Author ~Omkar Vibhute, researcher at Kalaml's Vision ML/DL research Lab.
+
 # Resources: Probability and Statistical Inference(Ninth Edition).
 
 https://github.com/kalams-vision-ML-DL-research-lab/01_Probabilistic_learning..git
